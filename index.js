@@ -46,23 +46,23 @@ class rootPass {                                //class created
 }
 
 
-document.querySelector('.submit').addEventListener("click", () => {
-// document.getElementsByClassName("submit").addEventListener("click",()=>{
-  let generatepwd = new rootPass()
-  let fetchInput = document.querySelector('.input').value
-      let input=fetchInput.toLowerCase()
-
-  if (input !== ("funny"||"strong"||"super"||"easy")) {
-    let copiedtext = document.querySelector('.copied-text')
-    copiedtext.style.display = "block"
-    let ctext = document.querySelector('.copy-text')
-    ctext.innerHTML = "Enter Password Criteria!"
-    setTimeout(() => {
-      let copytext = document.querySelector('.copied-text')
-      copytext.style.display = "none"
-    }, 3000);
-  }
-  else {
+document.querySelector('#submit').addEventListener("click", () => {
+// document.getElementById("submit").addEventListener("click",()=>{
+let generatepwd = new rootPass()
+let fetchInput = document.querySelector('.input').value
+let input=fetchInput.toLowerCase()
+    
+  if(input===""){
+        let copiedtext = document.querySelector('.copied-text')
+        copiedtext.style.display = "block"
+        let ctext = document.querySelector('.copy-text')
+        ctext.innerHTML = "Enter Password Criteria!"
+        setTimeout(() => {
+        let copytext = document.querySelector('.copied-text')
+        copytext.style.display = "none"
+            }, 3000);
+        }
+  else{
     if (input == "easy") {
       generatepwd.generateEasy()
     }
@@ -74,6 +74,9 @@ document.querySelector('.submit').addEventListener("click", () => {
     }
     else if (input == "super") {
       generatepwd.generateSuper()
+    }
+    else{
+        
     }
   }
 })
