@@ -37,13 +37,13 @@ body{
 }
 #text{
         /* position: relative; */
-        width: 86%;
+        width: 100%;
         height: 1vh;
         border: none;
         border: 4px solid black;
         margin: 25px 0px;
         padding: 20px 10px;
-        font-size: 24px;
+        font-size: 21px;
         letter-spacing: 3px;
         box-sizing: border-box;
         border-radius: 4px;
