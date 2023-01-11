@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     background: linear-gradient( #e0cf18, #a32121 ) 0 0% no-repeat;
     background-size: 100% 30%;
 }
+
 
 .container{
     width: 400px;
@@ -71,29 +73,33 @@ body{
 }
 
 .input {
- border: none;
- border-radius: 15px;
- padding: 15px;
- background-color: #e8e8e8;
- font-size: medium;
- font-weight: 700;
- max-width: 110%;
-margin: 20px -1px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    font-size: medium;
+    font-weight: 700;
+    max-width: 110%;
+    margin: 20px -1px;
 }
 
 .wrap{
     position:absolute;
-    bottom:0px;
+    bottom:0%;
     width:100%;
-     /* background-color: black; */
+    margin:0% 0% 0%
+}
+footer{
+      /* background-color: black; */
     /* background: linear-gradient(black,red,yellow); */
     background: radial-gradient(rgba(0, 0, 0, 0.393),rgba(138, 151, 77, 0.437));
     color: rgba(18, 19, 17, 0.347);
     height:2.8%;
     text-align: center;
-    padding:1px;
-    margin:20px 0px 0px;
+    padding:1.5px 2px 1px;
+    margin: 0px;
 }
- .wrap:hover{
+
+ footer:hover{
     color: rgba(255, 255, 255, 0.692);
 }
