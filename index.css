@@ -80,3 +80,20 @@ body{
  max-width: 110%;
 margin: 20px -1px;
 }
+
+.wrap{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+     /* background-color: black; */
+    /* background: linear-gradient(black,red,yellow); */
+    background: radial-gradient(rgba(0, 0, 0, 0.393),rgba(138, 151, 77, 0.437));
+    color: rgba(18, 19, 17, 0.347);
+    height:2.8%;
+    text-align: center;
+    padding:1px;
+    margin:20px 0px 0px;
+}
+ .wrap:hover{
+    color: rgba(255, 255, 255, 0.692);
+}
